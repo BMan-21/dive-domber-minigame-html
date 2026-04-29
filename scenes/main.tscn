@@ -1,0 +1,42 @@
+[gd_scene format=4 uid="uid://b4hn1lxsphn0w"]
+
+[ext_resource type="PackedScene" uid="uid://cbpxmtg6188xj" path="res://scenes/Dive Bomber.tscn" id="1_o5qli"]
+[ext_resource type="Texture2D" uid="uid://bt6v3lhl00rqv" path="res://sprites/alt arrow.png" id="2_jyhfs"]
+[ext_resource type="FontFile" uid="uid://1x4cu4ckfy6b" path="res://sprites/MegamaxJonathanToo-YqOq2.ttf" id="3_tbgi4"]
+[ext_resource type="Texture2D" uid="uid://bun8od6jy3kgd" path="res://sprites/alt bar.png" id="4_tefeu"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_o6xl0"]
+texture = ExtResource("4_tefeu")
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_tipki"]
+sources/0 = SubResource("TileSetAtlasSource_o6xl0")
+
+[node name="Node2D" type="Node2D" unique_id=1965414850]
+
+[node name="CharacterBody2D" parent="." unique_id=864622640 instance=ExtResource("1_o5qli")]
+position = Vector2(0, -4000)
+scale = Vector2(3, 3)
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=1065424667]
+zoom = Vector2(2, 2)
+
+[node name="Sprite2D2" type="Sprite2D" parent="CharacterBody2D" unique_id=1747696211]
+position = Vector2(-72.83333, -8)
+scale = Vector2(2.2708333, 1.5)
+texture = ExtResource("2_jyhfs")
+
+[node name="altitude arrow" type="Label" parent="CharacterBody2D" unique_id=1798088223]
+offset_left = -83.0
+offset_top = -10.999999
+offset_right = 4.0
+offset_bottom = 14.000001
+scale = Vector2(0.2, 0.2)
+theme_override_fonts/font = ExtResource("3_tbgi4")
+theme_override_font_sizes/font_size = 24
+text = "error"
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=474936407]
+scale = Vector2(3, 3)
+tile_map_data = PackedByteArray("AAD6/+f/AAAAAAAAAAD6/+j/AAAAAAAAAAD6/+n/AAAAAAAAAAD6/+r/AAAAAAAAAAD6/+v/AAAAAAAAAAD6/+z/AAAAAAAAAAD6/+3/AAAAAAAAAAD6/+7/AAAAAAAAAAD6/+//AAAAAAAAAAD6//D/AAAAAAAAAAD6//H/AAAAAAAAAAD6//L/AAAAAAAAAAD6//P/AAAAAAAAAAD6//T/AAAAAAAAAAD6//X/AAAAAAAAAAD6//b/AAAAAAAAAAD6//f/AAAAAAAAAAD6//j/AAAAAAAAAAD6//n/AAAAAAAAAAD6//r/AAAAAAAAAAD6//v/AAAAAAAAAAD6//z/AAAAAAAAAAD6//3/AAAAAAAAAAD6//7/AAAAAAAAAAD6////AAAAAAAAAAD6/wAAAAAAAAAAAAD6/wEAAAAAAAAAAAD6/wIAAAAAAAAAAAD6/wMAAAAAAAAAAAD6/wQAAAAAAAAAAAD6/wUAAAAAAAAAAAD6/wYAAAAAAAAAAAD6/wcAAAAAAAAAAAD6/wgAAAAAAAAAAAD6/wkAAAAAAAAAAAD6/woAAAAAAAAAAAD6/wsAAAAAAAAAAAD6/+b/AAAAAAAAAAD6/+X/AAAAAAAAAAD6/+T/AAAAAAAAAAD6/+P/AAAAAAAAAAD6/+L/AAAAAAAAAAD6/+H/AAAAAAAAAAD6/+D/AAAAAAAAAAD6/9//AAAAAAAAAAD6/97/AAAAAAAAAAD6/93/AAAAAAAAAAD6/9z/AAAAAAAAAAD6/9v/AAAAAAAAAAD6/9r/AAAAAAAAAAD6/9n/AAAAAAAAAAD6/9j/AAAAAAAAAAD6/9f/AAAAAAAAAAD6/9b/AAAAAAAAAAD6/9X/AAAAAAAAAAD6/9T/AAAAAAAAAAD6/9P/AAAAAAAAAAD6/9L/AAAAAAAAAAD6/9H/AAAAAAAAAAD6/9D/AAAAAAAAAAD6/8//AAAAAAAAAAD6/87/AAAAAAAAAAD6/83/AAAAAAAAAAD6/8z/AAAAAAAAAAD6/8v/AAAAAAAAAAD6/8r/AAAAAAAAAAD6/8n/AAAAAAAAAAD6/8j/AAAAAAAAAAD6/8f/AAAAAAAAAAD6/8b/AAAAAAAAAAD6/8X/AAAAAAAAAAD6/8T/AAAAAAAAAAD6/8P/AAAAAAAAAAD6/8L/AAAAAAAAAAD6/8H/AAAAAAAAAAD6/8D/AAAAAAAAAAD6/7//AAAAAAAAAAD6/77/AAAAAAAAAAD6/73/AAAAAAAAAAD6/7z/AAAAAAAAAAD6/7v/AAAAAAAAAAD6/7r/AAAAAAAAAAD6/7n/AAAAAAAAAAD6/7j/AAAAAAAAAAD6/7f/AAAAAAAAAAD6/7b/AAAAAAAAAAD6/7X/AAAAAAAAAAD6/7T/AAAAAAAAAAD6/7P/AAAAAAAAAAD6/7L/AAAAAAAAAAD6/7H/AAAAAAAAAAD6/7D/AAAAAAAAAAD6/6//AAAAAAAAAAD6/67/AAAAAAAAAAD6/63/AAAAAAAAAAD6/6z/AAAAAAAAAAD6/6v/AAAAAAAAAAD6/6r/AAAAAAAAAAD6/6n/AAAAAAAAAAD6/6j/AAAAAAAAAAD6/6f/AAAAAAAAAAD6/6b/AAAAAAAAAAD6/6X/AAAAAAAAAAD6/6T/AAAAAAAAAAD6/6P/AAAAAAAAAAD6/6L/AAAAAAAAAAD6/6H/AAAAAAAAAAD6/6D/AAAAAAAAAAA=")
+tile_set = SubResource("TileSet_tipki")

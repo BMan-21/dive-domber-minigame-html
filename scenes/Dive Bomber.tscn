@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://cbpxmtg6188xj"]
+
+[ext_resource type="Script" uid="uid://bsfaij3rdo5ql" path="res://Scripts/dive_bomber.gd" id="1_0mx0b"]
+[ext_resource type="Texture2D" uid="uid://c8fuwysrhqqsk" path="res://sprites/SBD Dauntless.png" id="1_07ben"]
+[ext_resource type="Texture2D" uid="uid://bm75mhqqyrm5k" path="res://sprites/SBD Bomb.png" id="2_0mx0b"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2lqow"]
+atlas = ExtResource("1_07ben")
+region = Rect2(0, 0, 45, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eh4ec"]
+atlas = ExtResource("1_07ben")
+region = Rect2(45, 0, 45, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4t4ts"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2lqow")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eh4ec")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=864622640]
+position = Vector2(6, 0)
+script = ExtResource("1_0mx0b")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1089801540]
+position = Vector2(-7.0000005, -5)
+rotation = -1.2217305
+sprite_frames = SubResource("SpriteFrames_4t4ts")
+autoplay = "default"
+frame_progress = 0.05694651
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2145800385]
+position = Vector2(1, 1)
+rotation = -1.2217305
+texture = ExtResource("2_0mx0b")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=493588893]
+polygon = PackedVector2Array(-11, 17, -9, 18, -7, 18, -9, 17, -6, 13, -5, 9, -3, 4, 1, 4, 3, -3, 0, -4, 2, -10, 2, -25, -5, -26, -7, -25, -6, -24, -2, -16, -3, -11, -5, -7, -5.609375, -6.390625, -6, -6, -7, -5, -12, -5, -13, -2, -14, -2, -13, 0, -14, 2, -11, 3, -11, 4, -9, 5, -10, 8, -12, 7, -11, 10, -11, 12, -11, 16, -13, 16)
