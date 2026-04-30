@@ -1,0 +1,211 @@
+[gd_scene format=3 uid="uid://n8jby8m45a7g"]
+
+[ext_resource type="Texture2D" uid="uid://d27bfu23wplsd" path="res://sprites/Hyriu bomb missed.png" id="1_25iad"]
+[ext_resource type="Script" uid="uid://dx26iagg3j5fc" path="res://Scripts/bomb_missed.gd" id="2_25iad"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6bmlj"]
+atlas = ExtResource("1_25iad")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_67pc0"]
+atlas = ExtResource("1_25iad")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i0303"]
+atlas = ExtResource("1_25iad")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pgjca"]
+atlas = ExtResource("1_25iad")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eftkx"]
+atlas = ExtResource("1_25iad")
+region = Rect2(512, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j50x8"]
+atlas = ExtResource("1_25iad")
+region = Rect2(640, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xgo11"]
+atlas = ExtResource("1_25iad")
+region = Rect2(768, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4j0v4"]
+atlas = ExtResource("1_25iad")
+region = Rect2(896, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_23m2s"]
+atlas = ExtResource("1_25iad")
+region = Rect2(1024, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uk07h"]
+atlas = ExtResource("1_25iad")
+region = Rect2(1152, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c2f0t"]
+atlas = ExtResource("1_25iad")
+region = Rect2(1280, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_irbva"]
+atlas = ExtResource("1_25iad")
+region = Rect2(1408, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y6xq3"]
+atlas = ExtResource("1_25iad")
+region = Rect2(1536, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_31o86"]
+atlas = ExtResource("1_25iad")
+region = Rect2(1664, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j4d4w"]
+atlas = ExtResource("1_25iad")
+region = Rect2(1792, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1vvas"]
+atlas = ExtResource("1_25iad")
+region = Rect2(1920, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t7k58"]
+atlas = ExtResource("1_25iad")
+region = Rect2(2048, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8kg0x"]
+atlas = ExtResource("1_25iad")
+region = Rect2(2176, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j2anl"]
+atlas = ExtResource("1_25iad")
+region = Rect2(2304, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p2i4p"]
+atlas = ExtResource("1_25iad")
+region = Rect2(2432, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hwrfk"]
+atlas = ExtResource("1_25iad")
+region = Rect2(2560, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_opn8e"]
+atlas = ExtResource("1_25iad")
+region = Rect2(2688, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8lf0y"]
+atlas = ExtResource("1_25iad")
+region = Rect2(2816, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gp0hs"]
+atlas = ExtResource("1_25iad")
+region = Rect2(2944, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4gk8n"]
+atlas = ExtResource("1_25iad")
+region = Rect2(3072, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u1qg6"]
+atlas = ExtResource("1_25iad")
+region = Rect2(3200, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8hveg"]
+atlas = ExtResource("1_25iad")
+region = Rect2(3328, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ct127"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6bmlj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_67pc0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i0303")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pgjca")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eftkx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j50x8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xgo11")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4j0v4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_23m2s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uk07h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c2f0t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_irbva")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y6xq3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_31o86")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j4d4w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1vvas")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t7k58")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8kg0x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j2anl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p2i4p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hwrfk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_opn8e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8lf0y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gp0hs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4gk8n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u1qg6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8hveg")
+}],
+"loop": false,
+"name": &"default",
+"speed": 7.0
+}]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" unique_id=1926419816]
+sprite_frames = SubResource("SpriteFrames_ct127")
+frame_progress = 1.0
+script = ExtResource("2_25iad")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1094080793]
+zoom = Vector2(4.7, 4.7)
+
+[connection signal="animation_finished" from="." to="." method="_on_animation_finished"]

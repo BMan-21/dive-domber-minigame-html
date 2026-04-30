@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://db3bebay2rxou"]
+
+[ext_resource type="FontFile" uid="uid://1x4cu4ckfy6b" path="res://sprites/MegamaxJonathanToo-YqOq2.ttf" id="1_vjb58"]
+[ext_resource type="Script" uid="uid://c1sykyt5bcmwe" path="res://button.gd" id="2_con2f"]
+
+[node name="Node2D" type="Node2D" unique_id=1115430648]
+
+[node name="Button" type="Button" parent="." unique_id=1273996653]
+offset_left = -35.0
+offset_top = -19.0
+offset_right = 32.0
+offset_bottom = 16.0
+theme_override_fonts/font = ExtResource("1_vjb58")
+text = "Play"
+script = ExtResource("2_con2f")
+
+[node name="Camera2D" type="Camera2D" parent="Button" unique_id=1545675581]
+position = Vector2(35, 19)
+zoom = Vector2(3, 3)
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

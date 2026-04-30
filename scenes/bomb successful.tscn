@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dnq36eexrln0j"]
 
 [ext_resource type="Texture2D" uid="uid://dku4b5xurm7fq" path="res://sprites/Hyriu bomb successful.png" id="1_t5tt2"]
+[ext_resource type="Script" uid="uid://0a43pocansnp" path="res://Scripts/bomb_successful.gd" id="2_gd6xp"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gd6xp"]
 atlas = ExtResource("1_t5tt2")
@@ -257,16 +258,18 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_lklf7")
 }],
-"loop": true,
+"loop": false,
 "name": &"default",
 "speed": 7.0
 }]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" unique_id=1926419816]
 sprite_frames = SubResource("SpriteFrames_ct127")
-autoplay = "default"
-frame = 29
-frame_progress = 0.5011838
+frame = 35
+frame_progress = 1.0
+script = ExtResource("2_gd6xp")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1094080793]
-zoom = Vector2(9, 9)
+zoom = Vector2(4.7, 4.7)
+
+[connection signal="animation_finished" from="." to="." method="_on_animation_finished"]

@@ -10,14 +10,15 @@ config_version=5
 
 [application]
 
-config/name="Dive Bomber Minigame Main"
-run/main_scene="uid://b4hn1lxsphn0w"
+config/name="Preload"
+run/main_scene="uid://db3bebay2rxou"
 config/features=PackedStringArray("4.6")
 config/icon="res://icon.svg"
 
 [display]
 
-window/size/viewport_height=1152
+window/size/viewport_width=600
+window/size/viewport_height=600
 
 [input]
 
